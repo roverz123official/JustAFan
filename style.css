@@ -1,0 +1,30 @@
+body {
+  background-color: #0e0d0d;
+  color: #7b836c;
+}
+.work-sans-theme {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+.nav-container {
+  width: 100%;
+  height: 60px;
+  outline: #7b836c solid 10px;
+  border-radius: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-break: break-all;
+}
+
+.nav-item {
+  padding: 0px 40px 0px 20px;
+}
+.nav-item p {
+  font-size: 24px;
+  font-family: Work Sans;
+  color: #7b836c;
+  font-weight: bold;
+}
