@@ -2,43 +2,59 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="public/imgs/JotaroHat.svg" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="public/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>JustAFan</title>
   </head>
   <body>
-    <nav>
-      <div class="nav-container">
-        <div class="nav-item">
-          <p>Anime</p>
+    <div class="fade">
+      <nav>
+        <div class="nav-container">
+          <div class="desktop-rocks">
+            <div class="nav-item">
+              <p>Anime</p>
+            </div>
+            <div class="nav-item">
+              <p>Manga</p>
+            </div>
+            <div class="nav-item">
+              <p>Music</p>
+            </div>
+            <div class="nav-item">
+              <p>Memes</p>
+            </div>
+            <div class="nav-item">
+              <p>Forums</p>
+            </div>
+          </div>
         </div>
-        <div class="nav-item">
-          <p>Manga</p>
+      </nav>
+      <main>
+        <div class="miss-you-bro">
+          <img id="JustAFan" class="JustAFan" src="public/imgs/JustAFan.png" alt="">
+          <p>JustAFan was made out of love and respect for simplyaweeb.to and I hope everyone enjoys it.
+            Thank you!</p>
+          <dialog id="credits">
+              <form method="dialog">
+                <div class="container">
+                  <p>JustAFan was made by <a target="_blank" href="https://github.com/roverz123official">Roverz123</a></p>
+                  <p>This website was a test of my skills and a passion project. The media shown on this website like anime, manga, and music do not belong to me, please support their official release.</p>
+                  <p onclick="credits.close()" class="credits">Close</p>
+                </div>
+              </form>
+          </dialog>
+         <a onclick="credits.showModal()">
+             <p class="credits">Credits</p>
+         </a>
         </div>
-        <div class="nav-item">
-          <p>Music</p>
+        <div class="string">
         </div>
-        <div class="nav-item">
-          <p>Memes</p>
-        </div>
-        <div class="nav-item">
-          <p>Forums</p>
-        </div>
-      </div>
-    </nav>
-    <main>
-      <div class="string-animation">
-        <h1>JustAFan</h1>
-        <h2>JustAFan</h2>
-        <h3>JustAFan</h3>
-        <h4>JustAFan</h4>
-        <h5>JustAFan</h5>
-        <h6>JustAFan</h6>
-      </div>
-    </main>
+      </main>
+    </div>
   </body>
 </html>

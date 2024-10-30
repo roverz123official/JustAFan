@@ -1,0 +1,111 @@
+body {
+  background-color: #0e0d0d;
+  color: #7b836c;
+  text-align: center;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+@keyframes fade {
+  from {opacity: 0.1;}
+  to {opacity: 1;}
+}
+.arimo-theme {
+  font-family: "Arimo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.work-sans-theme {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+.nav-container {
+  width: 100%;
+  height: 60px;
+  outline: solid 10px;
+  border-radius: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Work Sans;
+}
+.desktop-rocks {
+  display: flex;
+}
+.nav-container img {
+  height: 80%;
+  width: auto;
+  padding: 0px 10px 0px 10px;
+}
+.nav-item {
+  padding: 0px 40px 0px 20px;
+}
+.nav-item p {
+  font-size: 24px;
+  color: #7b836c;
+  font-weight: bold;
+}
+.nav-item p:hover {
+  color: #0cfd99;
+}
+.miss-you-bro {
+  font-size: 26px;
+  color: #d9a637;
+  font-weight: bold;
+  font-family: Arimo;
+  word-break:keep-all;
+}
+.JustAFan {
+  height: auto;
+  width: 90%;
+  object-fit: cover;
+  margin: 0px 0px 0px 0px;
+}
+.credits {
+  text-decoration: underline;
+  
+}
+.credits:hover {
+  color: #0cfd99;
+}
+dialog {
+  border: #d9a637 5px solid;
+  border-radius: 10px;
+  background-color: #0e0d0d;
+  color: #d9a637;
+}
+dialog a  {
+  color: #d9a637;
+}
+dialog a:hover  {
+  color: #0cfd99;
+}
+dialog a:active  {
+  color: #0cfd99;
+}
+.string {
+  --s: 44px; /* size of the wave */
+  --b: 16px; /* thickness of the line */
+  --m: 0.4; /* curvature of the wave [0 2] */
+  
+  background: #6fd5fc;
+  --R: calc(var(--s)*sqrt(var(--m)*var(--m) + 1) + var(--b)/2);
+  height: calc(2*var(--R));
+  width: 100%;
+  --_g: #0000 calc(99% - var(--b)), #000 calc(101% - var(--b)) 99%, #0000 101%;
+  mask:
+    radial-gradient(var(--R) at left 50% bottom calc(-1*var(--m)*var(--s)), var(--_g)) 
+     calc(50% - 2*var(--s)) calc(50% - var(--s)/2 - var(--b)/2)/calc(4*var(--s)) calc(var(--s) + var(--b)) repeat-x,
+    radial-gradient(var(--R) at left 50% top calc(-1*var(--m)*var(--s)),var(--_g)) 
+     50% calc(50% + var(--s)/2 + var(--b)/2)/calc(4*var(--s)) calc(var(--s) + var(--b)) repeat-x;
+}
+@media screen and (max-width: 780px) {
+  .desktop-rocks {
+    display: none;
+  }
+}
