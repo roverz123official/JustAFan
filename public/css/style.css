@@ -2,14 +2,15 @@ body {
   background-color: #0e0d0d;
   color: #7b836c;
   text-align: center;
-}
-.fade {
   animation-name: fade;
   animation-duration: 1s;
 }
 @keyframes fade {
   from {opacity: 0.1;}
   to {opacity: 1;}
+}
+a {
+  display: inline;
 }
 .arimo-theme {
   font-family: "Arimo", sans-serif;
@@ -30,13 +31,69 @@ body {
   outline: solid 10px;
   border-radius: 13px;
   display: flex;
-  justify-content: center;
   align-items: center;
   font-family: Work Sans;
+  justify-content: center;
 }
 .desktop-rocks {
   display: flex;
 }
+.burger-button {
+  display: none;
+  height: 50px;
+  width: 50px;
+  position: relative;
+}
+.burger-button span {
+  height: 5px;
+  width: 2em;
+  background-color: #7b836d;
+  border-radius: 25px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: .3s ease;
+}
+.burger-button span:nth-child(1) {
+  top: 25%;
+}
+.burger-button span:nth-child(3) {
+  top: 75%;
+}
+.burger-button.open span:nth-child(1) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.burger-button.open span:nth-child(2) {
+  opacity: 0;
+}
+.burger-button.open span:nth-child(3) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.burger-button-rocks {
+  background-color:  #161616;
+  height: 100vh;
+  width: 100%;
+  border-radius: 0px 40px 40px 0px;
+  max-width: 220px;
+  position: fixed;
+  top: 0;
+  left: -450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;    
+  justify-content: center;
+  text-align: center;
+  transition: .3s ease;
+  display: none;
+}
+
+.burger-button-rocks.open {
+  left: 0;
+}
+
 .nav-container img {
   height: 80%;
   width: auto;
@@ -68,6 +125,7 @@ body {
 }
 .credits {
   text-decoration: underline;
+  display: inline;
   
 }
 .credits:hover {
@@ -90,10 +148,11 @@ dialog a:active  {
 }
 .string {
   --s: 44px; /* size of the wave */
-  --b: 16px; /* thickness of the line */
-  --m: 0.4; /* curvature of the wave [0 2] */
-  
-  background: #6fd5fc;
+  --b: 12px; /* thickness of the line */
+  --m: .6; /* curvature of the wave [0 2] */
+  position: relative;
+  z-index: -1;
+  background: #4355c6;
   --R: calc(var(--s)*sqrt(var(--m)*var(--m) + 1) + var(--b)/2);
   height: calc(2*var(--R));
   width: 100%;
@@ -107,5 +166,17 @@ dialog a:active  {
 @media screen and (max-width: 780px) {
   .desktop-rocks {
     display: none;
+  }
+  .burger-button {
+    display: block;
+  }
+  .burger-button-rocks {
+    display: flex;
+  }
+  .nav-container {
+    justify-content: right;
+  }
+  .nav-item p {
+    font-size: 28px;
   }
 }

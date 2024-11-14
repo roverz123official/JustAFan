@@ -12,9 +12,9 @@
     <title>JustAFan</title>
   </head>
   <body>
-    <div class="fade">
       <nav>
         <div class="nav-container">
+          <img src="public/imgs/JotaroHat.svg" alt="Jotaro's hat">
           <div class="desktop-rocks">
             <div class="nav-item">
               <p>Anime</p>
@@ -32,18 +32,40 @@
               <p>Forums</p>
             </div>
           </div>
+          <div class="burger-button">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+            <div class="burger-button-rocks">
+              <div class="nav-item">
+                <p>Anime</p>
+              </div>
+              <div class="nav-item">
+                <p>Manga</p>
+              </div>
+              <div class="nav-item">
+                <p>Music</p>
+              </div>
+              <div class="nav-item">
+                <p>Memes</p>
+              </div>
+              <div class="nav-item">
+                <p>Forums</p>
+              </div>
+            </div>
         </div>
       </nav>
       <main>
         <div class="miss-you-bro">
-          <img id="JustAFan" class="JustAFan" src="public/imgs/JustAFan.png" alt="">
-          <p>JustAFan was made out of love and respect for simplyaweeb.to and I hope everyone enjoys it.
-            Thank you!</p>
+          <a href="index.html"><img id="JustAFan" class="JustAFan" src="public/imgs/JustAFan.png" alt=""></a>
+          <p>JustAFan is an anime and manga streaming website that was made out of love and respect for simplyaweeb.to (A taken down anime and manga streaming website I used in school a long time ago) and I hope everyone enjoys it. Thank you!</p>
+          <p>Disclamer: This website was a test of my skills and a passion project. The media shown on this website like anime, manga, and music do not belong to me, please support their official release.</p>
           <dialog id="credits">
               <form method="dialog">
                 <div class="container">
-                  <p>JustAFan was made by <a target="_blank" href="https://github.com/roverz123official">Roverz123</a></p>
-                  <p>This website was a test of my skills and a passion project. The media shown on this website like anime, manga, and music do not belong to me, please support their official release.</p>
+                  <p>JustAFan was made by <a target="_blank" href="https://roverz123.netlify.app/">Roverz123</a></p>
+                  <p>Check out the source code at <a target="_blank" href="https://github.com/roverz123official/JustAFan">Github</a></p> 
                   <p onclick="credits.close()" class="credits">Close</p>
                 </div>
               </form>
@@ -54,7 +76,7 @@
         </div>
         <div class="string">
         </div>
+        <script src="public/scripts/burger-menu.js"></script>
       </main>
-    </div>
   </body>
 </html>
