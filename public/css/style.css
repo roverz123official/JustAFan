@@ -11,6 +11,7 @@ body {
 }
 a {
   display: inline;
+  text-decoration: none;
 }
 .arimo-theme {
   font-family: "Arimo", sans-serif;
@@ -25,6 +26,7 @@ a {
   font-weight: 100;
   font-style: normal;
 }
+/* Navigation */ 
 .nav-container {
   width: 100%;
   height: 60px;
@@ -110,6 +112,7 @@ a {
 .nav-item p:hover {
   color: #0cfd99;
 }
+/* Main */
 .miss-you-bro {
   font-size: 26px;
   color: #d9a637;
@@ -117,11 +120,17 @@ a {
   font-family: Arimo;
   word-break:keep-all;
 }
-.JustAFan {
+.JustAFan-index {
   height: auto;
   width: 90%;
   object-fit: cover;
   margin: 0px 0px 0px 0px;
+}
+.JustAFan-others {
+  max-width: 390px;
+  height: auto;
+  object-fit: cover;
+  margin: 20px 0px 0px 0px;
 }
 .credits {
   text-decoration: underline;
@@ -146,6 +155,83 @@ dialog a:hover  {
 dialog a:active  {
   color: #0cfd99;
 }
+/* Record Player */
+.record-player{
+  height: 200px;
+  width: 400px;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  background-color: transparent;
+  border: #d9a637 5px solid;
+  border-radius: 10px;
+  margin: 60px 0px 0px 0px;
+}
+.record {
+  margin: 0px 0px 0px 20px;
+  align-self: center;
+}
+.record-crust {
+  height: 128.2px;
+  width: 128.2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border-radius: 50%;
+  border: #d9a630 4px solid;
+}
+.record-mantle {
+  height: 65px;
+  width: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #70d930;
+  border-radius: 50%;
+}
+.record-core {
+  height: 9px;
+  width: 9px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+ 
+.dots {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: center;
+  position: relative;
+  top: 59px;
+  right: 10px;
+  height: 30px;
+  width: 20px;
+}
+.upper-dot {
+  background-color: #d9a630;
+  height: 9px;
+  width: 9px;
+  border-radius: 50%;
+}
+.lower-dot {
+  background-color: #d9a630;
+  height: 9px;
+  width: 9px;
+  border-radius: 50%;
+}
+
+.song-name {
+  display: block;
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: Arimo;
+  padding: 0px 40px 0px 40px;
+  margin: 0px 0px 0px 0px;
+}
+
+/* Jolyne String(Placeholder for now) */ 
 .string {
   --s: 44px; /* size of the wave */
   --b: 12px; /* thickness of the line */
@@ -163,6 +249,7 @@ dialog a:active  {
     radial-gradient(var(--R) at left 50% top calc(-1*var(--m)*var(--s)),var(--_g)) 
      50% calc(50% + var(--s)/2 + var(--b)/2)/calc(4*var(--s)) calc(var(--s) + var(--b)) repeat-x;
 }
+/*screw you mobile I had to learn how to make a ham-menu*/ 
 @media screen and (max-width: 780px) {
   .desktop-rocks {
     display: none;
